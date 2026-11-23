@@ -59,6 +59,7 @@ body.closed{overflow:hidden}
 .drake small{color:var(--soft);font-size:14px}
 .drake h2{margin:.15em 0 .4em;font-size:clamp(30px,4.4vw,40px);font-style:italic;line-height:1.05}
 .drake li{opacity:1;transform:none;border-top:0;padding:0}
+.drake li+li{margin-top:20px}
 
 /* note */
 .band{padding:clamp(56px,9vw,110px) max(6vw,20px)}
@@ -134,14 +135,42 @@ footer p{color:var(--soft);margin:0}
 <section class="band note" id="note">
   <div class="wrap">
     <h2>Before you press play</h2>
-    <p>You told me exactly what you needed. More of my time, more of my effort, more of us. And I didn't listen. I was so focused on myself that I stopped showing up for you the way you deserve, and I'm sorry.</p>
-    <p>A while ago you asked me to make you a playlist. I should have done it then. I'm doing it now, not because it fixes anything, but because I want you to know I heard you, even the things I was slow to hear.</p>
+    <p>You told me exactly what you needed. More of my time, more of my effort, more of us. And I didn't listen. I was so focused on myself and other things that I stopped showing up for you the way you deserve, and I'm sorry.</p>
+    <p>A while ago you asked me to make you a playlist and put more effort into us. I should have done it then. I wish I had given it to you the day you asked, but I'm realizing I need to be there for us now, not later. So I put my own little spin on it, because I love you and I want you to know that I hear you.</p>
+    <p>I know this doesn't fix everything. I just want you to know I heard you, even the things I was slow to hear.</p>
     <p>Every song is here for a reason, and I wrote that reason under each one. It starts with me owning what I did and ends with where I want us to be.</p>
     <p class="sign">I love you.</p>
   </div>
 </section>
 
 <main class="band" id="parts"></main>
+
+<section class="band" style="padding-top:0">
+  <div class="drake">
+    <small>Honorable mentions</small>
+    <h2>Because I love you</h2>
+    <ol>
+      <li style="opacity:1;transform:none">
+        <span class="n">♡</span>
+        <span><span class="t">Melt</span> <span class="a">· Kehlani</span></span>
+        <a class="play" href="https://music.apple.com/us/search?term=Melt%20Kehlani" target="_blank" rel="noopener">Listen</a>
+        <span class="why">Even an inch away from you feels too far.</span>
+      </li>
+      <li style="opacity:1;transform:none">
+        <span class="n">♡</span>
+        <span><span class="t">Sun and Moon</span> <span class="a">· Anees</span></span>
+        <a class="play" href="https://music.apple.com/us/search?term=Sun%20and%20Moon%20Anees" target="_blank" rel="noopener">Listen</a>
+        <span class="why">You're my whole world. My sun and my moon.</span>
+      </li>
+      <li style="opacity:1;transform:none">
+        <span class="n">♡</span>
+        <span><span class="t">Facts</span> <span class="a">· H.E.R.</span></span>
+        <a class="play" href="https://music.apple.com/us/search?term=Facts%20H.E.R." target="_blank" rel="noopener">Listen</a>
+        <span class="why">I was missing you before I even knew you. That's facts.</span>
+      </li>
+    </ol>
+  </div>
+</section>
 
 <section class="band" style="padding-top:0">
   <div class="drake">
@@ -165,40 +194,45 @@ footer p{color:var(--soft);margin:0}
 {
 const parts = [
   {name:"I did you wrong", color:"#ff4f8b", songs:[
-    ["Did You Wrong","Pleasure P","I know I did you wrong."],
-    ["Get Her Back","Robin Thicke","Owning my mistakes and asking for another chance."],
-    ["If I Were a Boy","Beyoncé","I didn't listen when you told me what you needed."],
-    ["Man in the Mirror","Michael Jackson","Fixing us starts with fixing me."]]},
+    ["Did You Wrong","Pleasure P","I did you wrong, and I know it. No excuses."],
+    ["Get Her Back","Robin Thicke","I messed up and I'm owning it. I just want my girl back."],
+    ["If I Were a Boy","Beyoncé","You told me what you needed and I didn't listen. This one hurts because it's true."],
+    ["Man in the Mirror","Michael Jackson","Fixing us has to start with me fixing me."],
+    ["Love Lost","Trey Songz","I never loved you like I should have. I see that now, and I'm changing."]]},
   {name:"Missing you", color:"#ff8fab", songs:[
-    ["The Night We Met","Lord Huron","I wish I could go back and do it right from the start."],
-    ["We Belong Together","Mariah Carey","It doesn't feel right without you."],
-    ["Don't Forget About Us","Mariah Carey","Please remember what we have."],
-    ["How Do I Breathe","Mario","I don't know how to do life without you."],
-    ["Missin You Crazy","Russ","Simple and true."],
-    ["Here Without You","3 Doors Down","You're all I think about when you're not here."],
-    ["Thinkin Bout You","Frank Ocean","You're on my mind all the time."],
-    ["She Ain't You","Chris Brown","Nobody else could ever be you."],
-    ["Just A Dream","Nelly","My worst fear is losing you over this."],
-    ["U Got It Bad","Usher","How bad I've got it for you."]]},
+    ["The Night We Met","Lord Huron","If I could go back, I'd do it all right from the very first day."],
+    ["We Belong Together","Mariah Carey","Nothing feels right when you're not with me."],
+    ["Don't Forget About Us","Mariah Carey","Please don't forget what we have. I know I haven't."],
+    ["How Do I Breathe","Mario","Honestly, I don't know how to do life without you."],
+    ["Missin You Crazy","Russ","I miss you like crazy, and that's just the truth."],
+    ["Lost Without U","Robin Thicke","Without you I'm just lost. Simple as that."],
+    ["Thinkin Bout You","Frank Ocean","You're always on my mind. Like, always."],
+    ["She Ain't You","Chris Brown","Nobody else could ever be you. Nobody."],
+    ["Just A Dream","Nelly","Losing you is my worst nightmare, and I'm not letting it happen."],
+    ["U Got It Bad","Usher","I got it bad for you, and I'm not even trying to hide it."]]},
   {name:"Take me back", color:"#ffb3c8", songs:[
-    ["Please Don't Go","Tank","Stay and let me show you I can change."],
-    ["7 Minutes","Dean Lewis","Racing to make things right before it's too late."],
+    ["Please Don't Go","Tank","Stay. Let me show you I can be better."],
     ["The Man Who Can't Be Moved","The Script","I'm not going anywhere. I'll be right here."],
-    ["Not Over You","Gavin DeGraw","I'm nowhere near over you."],
-    ["Can't Be Friends","Trey Songz","I could never settle for less than us."],
-    ["Wait for You","Elliott Yamin","However long it takes, I'll wait."],
-    ["Just Give Me a Reason","P!nk & Nate Ruess","We're not broken, just bent."],
-    ["Don't Give Up On Me","Andy Grammer","I'm not giving up on us, please don't give up on me."],
-    ["For the First Time","The Script","I want us to fall in love again like it's new."]]},
+    ["Not Over You","Gavin DeGraw","I'm not even close to being over you."],
+    ["Honeymoon Avenue","Ariana Grande","I miss how we used to be, and I want us back there."],
+    ["Make It To Me","Sam Smith","I really believe we'll always find our way back to each other."],
+    ["Can't Be Friends","Trey Songz","I could never just be your friend. It's you or nothing."],
+    ["Wait for You","Elliott Yamin","I'll wait for you as long as it takes. I mean that."],
+    ["Just Give Me a Reason","P!nk & Nate Ruess","We're not broken, just bent. We can fix this."],
+    ["Don't Give Up On Me","Andy Grammer","I'm not giving up on us. Please don't give up on me."],
+    ["For the First Time","The Script","I want us to fall in love all over again like it's brand new."]]},
   {name:"My promise", color:"#ffe0ea", songs:[
-    ["Read Your Mind","Avant","I want to understand what you need, not guess."],
-    ["Put That Woman First","Jaheim","You come first now."],
-    ["Differences","Ginuwine","What loving you has changed in me."],
-    ["Like I'm Gonna Lose You","Meghan Trainor & John Legend","I'll love you like every day matters."],
-    ["You Are The Reason","Calum Scott & Leona Lewis","You're why I want to be better."],
-    ["I'll Be","Edwin McCain","Everything I want to be for you."],
-    ["Best Part","Daniel Caesar & H.E.R.","You're the best part of my life."],
-    ["Until The End Of Time","Justin Timberlake & Beyoncé","Where I want us to end up."]]}
+    ["Read Your Mind","Avant","I want to really understand what you need, not just guess."],
+    ["Differences","Ginuwine","You changed me for the better, and I'll never forget that."],
+    ["Naked","Ella Mai","I want us to be open with each other. No walls, nothing held back."],
+    ["Nothing Even Matters","SiR","When I'm with you, nothing else even matters. That's how much I love you."],
+    ["Like I'm Gonna Lose You","Meghan Trainor & John Legend","I'm going to love you like every day counts, because it does."],
+    ["You Are The Reason","Calum Scott & Leona Lewis","You're the reason I want to be better. You always have been."],
+    ["She's Mine Pt. 1","J. Cole","I don't say it enough, but you're my whole heart."],
+    ["Be My Baby","Ariana Grande & Cashmere Cat","All I want is to be yours, and for you to be mine."],
+    ["Hold Me Down","Daniel Caesar","I want us to have each other's backs, no matter what."],
+    ["Best Part","Daniel Caesar & H.E.R.","You're the best part of my life, and I mean that."],
+    ["Until The End Of Time","Justin Timberlake & Beyoncé","This is where I want us to end up. You and me, forever."]]}
 ];
 
 const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
